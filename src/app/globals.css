@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary-600 hover:bg-gray-100;
+  }
+
+  .lottery-ball {
+    @apply rounded-full flex items-center justify-center shadow-md;
+  }
+
+  .countdown-card {
+    @apply bg-white text-gray-900 font-bold text-2xl px-4 py-2 rounded-lg shadow-md;
+  }
+
+  .countdown-separator {
+    @apply text-white font-bold text-2xl mx-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
